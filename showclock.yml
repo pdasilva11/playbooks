@@ -1,14 +1,14 @@
 
 ---
-- hosts: ios_devices
+- hosts: FEYE_devices
   gather_facts: no
   connection: local
  
   vars_prompt:
-  - name: "mgmt_username"
+  - name: "admin"
     prompt: "Username"
     private: no
-  - name: "mgmt_password"
+  - name: "admin"
     prompt: "Password"
 
   tasks:
