@@ -6,9 +6,9 @@
  
   vars_prompt:
   - name: "admin"
-    prompt: "Username"
+    prompt: "admin"
     private: no
-  - name: "admin"
+  - name: "mgmt_password"
     prompt: "Sporting1"
 
   tasks:
@@ -17,7 +17,7 @@
     set_fact:
       provider:
         host: "{{ inventory_hostname }}" 
-        username: "{{ mgmt_username }}"
+        username: "{{ admin }}"
         password: "{{ mgmt_password }}"
 
   - name: IOS | Show clock
