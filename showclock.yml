@@ -1,5 +1,7 @@
-
 ---
+- hosts: fireeye
+  gather_facts: no
+  connection: local
  
   vars_prompt:
   - name: "admin"
