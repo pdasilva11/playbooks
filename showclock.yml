@@ -1,8 +1,5 @@
 
 ---
-- hosts: fireeye
-  gather_facts: no
-  connection: network_cli
  
   vars_prompt:
   - name: "admin"
