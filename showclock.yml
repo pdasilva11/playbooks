@@ -1,5 +1,5 @@
 ---
-- hosts: FEYE
+- hosts: fireeye
   gather_facts: no
   connection: local
  
