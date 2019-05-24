@@ -1,17 +1,7 @@
 ---
-  #hosts: nx
-  #gather_facts: no
-  #connection: local
-  
- 
-
-  hosts: '*'
-  become: true
-  gather_facts: true
-  
-  
-  
-  
+  hosts: nx
+  gather_facts: no
+  connection: local 
  
   vars_prompt:
   - name: "admin"
