@@ -4,8 +4,7 @@
   #connection: local
   
  
-  name: Configure web server
-  remote_user: admin
+
   hosts: '*'
   become: true
   gather_facts: true
