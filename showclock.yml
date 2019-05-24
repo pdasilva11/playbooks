@@ -1,7 +1,18 @@
 ---
-- hosts: nx
-  gather_facts: no
-  connection: local
+  #hosts: nx
+  #gather_facts: no
+  #connection: local
+  
+ 
+  name: Configure web server
+  remote_user: admin
+  hosts: '*'
+  become: true
+  gather_facts: true
+  
+  
+  
+  
  
   vars_prompt:
   - name: "admin"
